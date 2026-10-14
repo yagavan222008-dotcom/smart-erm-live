@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #F7F6F2;
+  --surface-primary: #FFFFFF;
+  --text-primary: #252923;
+  --border-divider: #E5E3DC;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars matching clinical palette */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F0EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #C9C7BF;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A3A097;
+}
+
+.font-editorial {
+  font-family: 'Newsreader', Georgia, serif;
+}
+
+.table-row-hover:hover {
+  background-color: #F9F8F5;
+}
+
+/* Clean input focus state */
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #345B49;
+  box-shadow: 0 0 0 1px #345B49;
+}
