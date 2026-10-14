@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { Navigation, NavTab } from './components/Navigation';
 import { Header } from './components/Header';
 import { QuickSearchModal } from './components/QuickSearchModal';
@@ -164,6 +165,9 @@ export function App() {
         onClose={() => setIsSearchOpen(false)}
         onSelectPatient={handleSelectPatientFromSearch}
       />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </div>
   );
 }
